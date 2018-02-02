@@ -1,0 +1,48 @@
+.wraps{
+background-color:black;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 10px;
+grid-auto-rows: minmax(100px,auto);
+}
+body{
+background-color:black;
+}
+.First{
+ background-color:green;
+text-align:center;
+
+grid-column: 1/4;
+grid-row: 1/1;
+}
+.Second{ 
+background-color:blue;
+text-align:center;
+
+grid-column:2 ;
+grid-row:2;
+}
+.Third{
+background-color:red;
+grid-column:1;
+grid-row: 2/5;
+}
+.Fourth{
+background-color:magenta;
+
+grid-column: 3;
+grid-row: 3;
+}
+.Fifth{
+background-color:teal;
+
+grid-column:2;
+grid-row:4;
+}
+.Sixth{
+background-color:tan;
+
+grid-column: 3;
+grid-row: 4;
+}
+
