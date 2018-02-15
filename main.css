@@ -1,48 +1,93 @@
 .wraps{
-background-color:black;
+background-color:white;
 display: grid;
 grid-template-columns: repeat(3,1fr);
 grid-gap: 10px;
-grid-auto-rows: minmax(100px,auto);
+grid-auto-rows: minmax(150px,auto);
 }
 body{
 background-color:black;
 }
-.First{
- background-color:green;
+.First{ 
 text-align:center;
-
 grid-column: 1/4;
-grid-row: 1/1;
+grid-row: 1/2;
 }
-.Second{ 
-background-color:blue;
+.First h1{
 text-align:center;
+font-family: cursive;
+padding-top:40px;
+padding-bottom:20px;
+}
+.First ul{
+    padding-left:150px;
+    text-align:center;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.First li{
+ padding-left:100px;
+ 
+float: left;
+}
+.First li a:hover{
+background-color: red;
+}
+.First li a {
 
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+}
+
+.Second{ 
+
+text-align:center;
 grid-column:2 ;
-grid-row:2;
+grid-row:2/5;
+border-left:solid;
 }
 .Third{
-background-color:red;
 grid-column:1;
 grid-row: 2/5;
 }
 .Fourth{
-background-color:magenta;
-
 grid-column: 3;
 grid-row: 3;
 }
 .Fifth{
-background-color:teal;
-
 grid-column:2;
 grid-row:4;
 }
 .Sixth{
-background-color:tan;
-
 grid-column: 3;
 grid-row: 4;
 }
+.Seventh{
+border-top:solid;
+grid-column:1/4;
+}
+.Eighth{
+text-align:center;
+grid-column:3;
+grid-row:2;
+}
+.Center{
+text-align:center;
+}
+.Center img {
+display:block;
+margin-left:auto;
+margin-right:auto;
+border:solid;
+border-color:black;
 
+}

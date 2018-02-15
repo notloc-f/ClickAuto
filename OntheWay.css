@@ -1,0 +1,13 @@
+html{
+background:"https://image.ibb.co/ivUT9R/click_square2.jpg"
+}
+body{
+background: linear-gradient(to right,#FF0000,#FF6600);
+}
+body h2 {
+font-family:Baloo;
+color:white;
+text-align:center;
+padding-top: 20px;
+}
+
