@@ -47,8 +47,17 @@ watch:{
     this.custNum=this.custNum +1;
 //    console.log(this.custNum);
   //  console.log(this.custFirst);
-    this.customerData.push({first:this.custFirst,last:this.custLast,phone:this.custPhone,email:this.custEmail,carMake:this.carMake,problem:this.problem});
-  //  this.customerData[this.custNum].push({first:this.custFirst});
+    this.customerData.push({first:this.custFirst,last:this.custLast,phone:this.custPhone,email:this.custEmail,carMake:this.carMake,carModel:this.carModel,
+comments:this.custComments,problem:this.problem});
+this.custFirst='';
+this.custLast='';
+this.custPhone='';
+this.custEmail='';
+this.carMake='';
+this.carModel='';
+this.problem='';
+this.custComments='';
+ //  this.customerData[this.custNum].push({first:this.custFirst});
   //  console.log(this.custNum)
   },
   toggle: function(){
