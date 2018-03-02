@@ -1,11 +1,15 @@
 .customer{
+  position:fixed;
+
 
 }
+input{
+  padding:30px;
+  text-align: center;
+}
 html{
-  background-image: url("https://image.ibb.co/ivUT9R/click_square2.jpg");
- height: auto;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- position: relative;
+  background: #bdbdc7;
+    margin: 0 0;
+    padding:10px;
+    text-align:center;
 }
