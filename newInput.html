@@ -18,9 +18,9 @@
     <input v-model="custLast" placeholder = "Last Name">
     </br>
     <input v-model="custEmail" placeholder = "Email Address">
-    </br>
+
     <input v-model.number="custPhone" placeholder = "Phone Number (please include area code)">
-    </br>
+
     <input v-model="carMake" placeholder = "Car Make (Nissan, Honda, Ford, ect)">
     </br>
     <input v-model="carModel" placeholder = "Car Model (Altima, Accord, F-150,ect)">
@@ -30,7 +30,7 @@
     <input  v-model="custComments" placeholder ="Other comments or concerns we should know about">
   </br>
     <button v-on:click.prevent="addField">Submit Request</button>
-    <button v-on:click.prevent="toggle">Switch to Ownever</button>
+    <button v-on:click.prevent="toggle">Switch to Owner View</button>
   </form>
 </div>
 <div v-else id="Owner">

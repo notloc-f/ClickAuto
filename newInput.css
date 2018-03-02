@@ -1,15 +1,35 @@
-.customer{
-  position:fixed;
 
+form{
 
 }
-input{
-  padding:30px;
+/* input{
+  padding:50px;
   text-align: center;
+  left:100px;
+} */
+ input{
+   padding:1%;
+  width:100%;
+}
+button:hover{
+  background-color: orange;
+  -webkit-transition-duration: 0.2s;
 }
 html{
-  background: #bdbdc7;
+  background: #bdbec7;
     margin: 0 0;
     padding:10px;
     text-align:center;
+}
+li:hover{
+  background-color: blue;
+  -webkit-transition-duration: 0.8s;
+}
+li{
+  padding:10px;
+}
+ul{
+list-style-type:none;
+background-color:white;
+
 }
