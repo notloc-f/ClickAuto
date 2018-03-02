@@ -3,13 +3,14 @@
 <head>
   <title>GetInfo</title>
   <script src="https://unpkg.com/vue-star-rating/dist/star-rating.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-  <script src="/ClickAuto.js"></script>
+
+
 </head>
 <body>
 <h2>Getting what we need to get YOU what YOU need!</h2>
 <div id="JobData">
-  <h3> {{toGetTitle}} </h3>
+  <div v-if ="display">
+  <h3> Customer Information </h3>
   <form v-model:submit.prevent="addField">
     <input v-model="custFirst" placeholder = "First Name">
   </br>
@@ -17,18 +18,29 @@
     </br>
     <input v-model="custEmail" placeholder = "Email Address">
     </br>
-    <input v-model="custPhone" placeholder = "Phone Number (please include area code)">
+    <input v-model.number="custPhone" placeholder = "Phone Number (please include area code)">
     </br>
     <input v-model="carMake" placeholder = "Car Make (Nissan, Honda, Ford, ect)">
     </br>
     <input v-model="carModel" placeholder = "Car Model (Altima, Accord, F-150,ect)">
     </br>
-    <textarea cols ="50" v-model="problem" placeholder = "What part of your car seems to be having a problem? Leave blank if you have no idea"></textarea>
-    <textarea cols ="50" v-model="custComments" placeholder =""></textarea>
+    <input  v-model="problem" placeholder = "What part of your car seems to be having a problem? Leave blank if you have no idea">
+  </br>
+    <input  v-model="custComments" placeholder ="Other comments or concerns we should know about">
+  </br>
+    <button v-on:click.prevent="addField">Submit Request</button>
+    <button v-on:click.prevent="toggle">Switch to Ownever</button>
   </form>
-  </form>
-
-
 </div>
+<div v-else>
+  <button v-on:click.prevent="toggle">Switch to User</button>
+  <ul>
+    <li v-for="info in customerData">{{info.first}}  {{info.last}} {{info.phone}} {{info.email}} {{info.problem}}</li>
+  </ul>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+  <script src="ClickAuto.js"></script>
 </body>
+
 </html>
